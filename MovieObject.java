@@ -1,6 +1,3 @@
-package for_assignment_1;
-
-
 public class MovieObject {
 	private String name;
 	private int frequency;
