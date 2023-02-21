@@ -2,7 +2,26 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+// Thomas Sorkin
+
 public class MovieTags {
+	
+	/*
+	 * Takes in a csv file as the first and only argument, then prints out the tags of the 3 max frequency
+	 * movies and 3 min frequency movies. Then, it displays a text user interface, prompting the user to input either
+	 * T, C, or EXIT -> For T, it searches for and prints out the frequency the tag the user inputs
+	 * For C, it searches for all tags with the frequency the user inputs
+	 * For EXIT, the program exits
+	 * 
+	 * @param args[0]: The name of the csv file
+	 */
+
+	/* 
+	 * Reads from the input file, creates a MovieObject for each new movie or increments an already
+	 * existing MovieObject if the movie was already encountered, then mergeSorts the objects array by frequency.
+	 * Next, it prints the tags of the top 3 frequencies and bottom 3 frequencies
+	 * Finally, the program takes in user input and exits when the user inputs EXIT 
+	 */
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
