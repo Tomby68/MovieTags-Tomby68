@@ -1,5 +1,3 @@
-package for_assignment_1;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
