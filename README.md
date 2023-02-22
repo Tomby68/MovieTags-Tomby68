@@ -8,3 +8,15 @@ Repository for Assignment 01, CS 245, Spring 2023.
 	 For EXIT, the program exits
 	  
 	 @param args[0]: The name of the csv file
+	 
+Reading the data file:
+	- Uses objs, an array of MovieObject objects -> MovieObject is a separate class with values String name and int frequency, as well as getters and an increment function to increase the frequency
+	- For each line in the data file, the program uses inArr, a linear search function that checks if a given String target is in the objs array. 
+		- If the tag is in objs, the program increments the frequency of that object.
+		- If the tag is not in objs, the program adds a new MovieObject to objs with tag.
+	- Running time: O(n^2) where n is the number of lines in the data file, because for each 	line of the file the program searches a separate array that may have up to n elements.
+	
+List Most and Least Popular Tags:
+	- First, the program mergeSorts the objs array by frequency
+		- Modification: If two frequencies are the same, the program sorts them 			alphabetically by tag
+		- Running time: O(nlgn) time, it is mergeSort with one extra if
