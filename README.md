@@ -18,5 +18,15 @@ Reading the data file:
 	
 List Most and Least Popular Tags:
 	- First, the program mergeSorts the objs array by frequency
-		- Modification: If two frequencies are the same, the program sorts them 			alphabetically by tag
-		- Running time: O(nlgn) time, it is mergeSort with one extra if
+		- Modification: If two frequencies are the same, the program sorts them alphabetically by tag
+			- Running time: O(nlgn) time, it is mergeSort with one extra if
+		- Next: Searches through the objs array for the top three highest maxes, alphabetically if they are the same
+			- Running time: O(n) time, if all the frequencies are the same it will search the whole array
+		- Finally, prints out the top 3 highest frequency tags and the bottom 3 lowest frequency tags
+Find Tags by Count or Count by Tag:
+	- Takes user input in a while loop -> Will either take in T, C, EXIT, or invalid input
+		- T: Gives the frequency of the tag the user inputs -> Running Time: O(n), searches through objs for an object with that tag and outputs
+		the frequency
+		- C: Outputs tags of movies with frequency of the user input -> Running Time: O(n), searches through objs for any object with frequency equal to the user input, and outputs that object tag
+		- EXIT: The program exits -> Running Time: O(1), just a break statement and scnr.close()
+		- Invalid input: The program asks for valid user input -> Running Time: O(1), one print statement and reruns the while loop
